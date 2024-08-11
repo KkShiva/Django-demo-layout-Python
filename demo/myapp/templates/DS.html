@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% block title %}Demon Slayer Page{% endblock %}
+{% block content %} 
+<style>
+    body {
+        {% load static %}
+        background-image: url("{% static 'myapp/images/Demonslayer.jpg' %}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1 {
+            margin-top: 80px;
+            margin-left: 0px;
+            font-size: 4em;
+            color: rgb(0, 0, 0);
+        }
+</style>
+<h1 class="animate__animated animate__fadeInUp">DEMON SLAYER</h1>
+
+<div class="text-box" style="top: -20px; left: -100px;">
+    <p>Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon Destruction")[3] is a Japanese anime television series produced by Ufotable, based on the manga series of the same name by Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is turned into a demon.</p>
+</div>
+<div class="text-box" style="top: -20px; left: 300px;">
+    <p>The main protagonist is Tanjiro Kamado, a young boy with great fighting talent. He is kind, naive, and have big empathy for anyone, even demons. He is accompanied by Nezuko, his beautiful little sister who turned into a demon but manages to keep her humanity.</p>
+</div>
+<div class="text-box" style="top: -20px; left: -200px;">
+    <p>In this story world, demons are created by a supervillain called "Muzan Kibutsuji". This supervillain is immortal, but direct sun rays could killed him. All other demons he created can be killed by cutting their neck with special blades called Nichirin. There is a secret organization called The Demon Slayer Corps who always tries to end the chaos made by Muzan Kibutsuji. This battle is already started since ancient times. As for the story setting, this manga is based on Japan during the Taisho Era (between 1912 - 1926). So, expect some beautiful sceneries of classical Japan in this manga.</p>
+</div>
+<div class="text-box" style="top: -20px; left: 300px;">
+    <p>The first story arc is quite predictable. Tanjiro got a mission (from a talking crow), he slays the demon, he wounded, he wins. Repeat. Then he starts to get along with his comrades: Inosuke Hashibira and Zenitsu Agatsuma. This is when the manga get more exciting. Not because of the personality traits, but more on the action fighting scenes.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% block title %}About Page{% endblock %}
+{% block content %} 
+<style>
+    body {
+        {% load static %}
+        background-image: url("{% static 'myapp/images/Onepice.jpg' %}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1 {
+            margin-top: 200px;
+            margin-left: -600px;
+            font-size: 10em;
+            color: rgb(255, 255, 255);
+        }
+</style>
+
+<h1 class="animate__animated animate__fadeInUp">ONE PIECE</h1>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% block title %}Django Demo home page{% endblock %}
+{% block content %} 
+<style>
+    body {
+        {% load static %}
+        background-image: url("{% static 'myapp/images/BG.jpg' %}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1 {
+            margin-top: 80px;
+            margin-left: 400px;
+            font-size: 4em;
+            color: rgb(0, 0, 0);
+        }
+</style>
+<h1 class="animate__animated animate__fadeInUp">HOME</h1>
+
+<div class="text-box" style="top: -20px; left: 300px;">
+    <p>hi welcome,</p> 
+    <p>This is project is a demo layout for django setup, below are features.</p>
+    <ul>
+        <li>Nav bar</li>
+        <li>Image background</li>
+        <li>Text box</li>
+        <li>Sliding left</li>
+        <li>Base template</li>
+        <li>Costmizable postions for Title</li>
+        <li>Costmizable postions for TextBox</li>
+      </ul>
+      <p>View About for more informations.</p>
+    </div>
+
+{% endblock %}

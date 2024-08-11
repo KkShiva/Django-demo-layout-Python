@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% block title %}fairy tale Page{% endblock %}
+{% block content %} 
+<style>
+    body {
+        {% load static %}
+        background-image: url("{% static 'myapp/images/FT.jpg' %}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    h1 {
+            margin-top: 200px;
+            margin-left: -100px;
+            font-size: 8em;
+            color: rgb(0, 0, 0);
+        }
+</style>
+<h1 class="animate__animated animate__fadeInUp">FAIRY TALE</h1>
+{% endblock %}
